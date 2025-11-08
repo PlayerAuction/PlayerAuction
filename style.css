@@ -2,71 +2,82 @@ body {
   margin: 0;
   padding: 0;
   background-color: #1F2635;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.container {
+.main {
   width: 90%;
-  max-width: 600px;
-  background-color: #141a26;
-  border-radius: 8px;
-  padding: 20px 25px;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
-  border: 1px solid #2c3345;
+  max-width: 700px;
 }
 
-.important-box {
-  background-color: #0f151f;
-  border: 1px solid #d32f2f;
+.instruction-box {
+  background-color: #1F2635;
+  border: 2px solid #b71c1c;
   border-radius: 6px;
-  padding: 15px 20px;
-  margin-bottom: 25px;
+  padding: 20px 25px;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
 }
 
-.important-box h2 {
-  color: #fff;
+.title {
   font-size: 15px;
-  margin: 0 0 8px;
+  margin: 0 0 15px;
+  line-height: 1.5;
 }
 
 .important {
   color: #ff4c4c;
+  font-weight: bold;
 }
 
-.important-box p {
-  font-size: 13px;
-  margin: 0;
+.red {
+  color: #ff4c4c;
+}
+
+.steps {
   color: #ccc;
+  font-size: 13px;
 }
 
-.steps ol {
+ol {
   margin: 0;
   padding-left: 20px;
 }
 
-.steps li {
-  margin-bottom: 12px;
+li {
   font-size: 14px;
-  line-height: 1.5;
   color: #e0e0e0;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-.link-box {
+.yellow-box {
   background-color: #ffcc00;
   color: #000;
-  padding: 2px 6px;
+  padding: 2px 8px;
   border-radius: 4px;
-  font-weight: bold;
   text-decoration: none;
-  display: inline-block;
+  font-weight: bold;
 }
 
-.link-box:hover {
+.yellow-box:hover {
   background-color: #ffd633;
+}
+
+@media (max-width: 600px) {
+  .instruction-box {
+    padding: 15px 18px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 13px;
+  }
 }
