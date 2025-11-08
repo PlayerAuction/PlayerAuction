@@ -1,29 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Formulario clientes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página web</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Bienvenido a mi página</h1>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>Enviar datos</h1>
-    <form action="https://formspree.io/f/xrbrzbwy" method="POST">
-      <label>Nombre</label><br>
-      <input name="nombre" required><br><br>
+    <section id="sobre">
+      <h2>Sobre mí</h2>
+      <p>Acá podés escribir una breve descripción, quién sos, qué hacés, etc.</p>
+    </section>
 
-      <label>Email</label><br>
-      <input type="email" name="email" required><br><br>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Servicio 1</li>
+        <li>Servicio 2</li>
+        <li>Servicio 3</li>
+      </ul>
+    </section>
 
-      <label>Teléfono (opcional)</label><br>
-      <input name="telefono"><br><br>
-
-      <label>Mensaje / Detalle</label><br>
-      <textarea name="mensaje" required></textarea><br><br>
-
-      <button type="submit">Enviar</button>
-    </form>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Podés escribirme a <a href="mailto:tucorreo@gmail.com">tucorreo@gmail.com</a></p>
+      <p>O seguirme en <a href="https://instagram.com/tucuenta" target="_blank">Instagram</a></p>
+    </section>
   </main>
+
+  <footer>
+    <p>© 2025 - Tu nombre o marca</p>
+  </footer>
 </body>
 </html>
+<script src="script.js"></script>
