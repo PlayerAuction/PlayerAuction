@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Formulario clientes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Enviar datos</h1>
+    <form action="https://formspree.io/f/xrbrzbwy" method="POST">
+      <label>Nombre</label><br>
+      <input name="nombre" required><br><br>
+
+      <label>Email</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Teléfono (opcional)</label><br>
+      <input name="telefono"><br><br>
+
+      <label>Mensaje / Detalle</label><br>
+      <textarea name="mensaje" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
